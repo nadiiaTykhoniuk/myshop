@@ -1,10 +1,3 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Translators:
-# Oleksandr Kropyvko <akropivko@gmail.com>, 2021
-# Федір Вільгота <fredy31415@gmail.com>, 2019
 msgid ""
 msgstr ""
 "Project-Id-Version: aimeos-core\n"
@@ -20,18 +13,33 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 
-msgid "+ Payment costs"
-msgstr "+ Вартість оплати (тестую переклад)"
+msgid "Add to basket"
+msgstr "До піськи"
 
-msgid "+ Shipping"
-msgstr "+ Доставка (тестую переклад)"
 
-msgid "Buy now"
-msgstr "Купити зараз (тестую переклад)"
+#: html/src/Client/Html.php:53
+#, php-format
+msgid "Class \"%1$s\" not available"
+msgstr "Клас \"%1$s\" не доступний "
 
-msgid "Cancel"
-msgstr "Відмінити (тестую переклад)"
+#: html/src/Client/Html.php:34
+#, php-format
+msgid "Client path is empty"
+msgstr "Клієнтський шлях недоступний"
 
-msgid "Categories"
-msgstr "Категорії (тестую переклад)"
+#: html/src/Client/Html/Test/Customized/Factory.php:19
+#: html/src/Client/Html/Basket/Customized/Factory.php:19
+#, php-format
+msgid "Invalid characters in class name \"%1$s\""
+msgstr "Недопустимі знаки в назві класу \"%1$s\""
+
+#: html/src/Client/Html.php:43
+#, php-format
+msgid "Invalid characters in client name \"%1$s\""
+msgstr "Недопустимі знаки в імені клієнта \"%1$s\""
+
+#: html/src/Client/Html.php:57
+#, php-format
+msgid "Invalid factory \"%1$s\""
+msgstr "Недопустима фабрика \"%1$s\""
 

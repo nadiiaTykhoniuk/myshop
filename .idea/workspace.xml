@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/code/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomizedController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomizedController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/locale/select/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/locale/select/body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/shop/catalog/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/shop/catalog/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/test/customized.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/test/customized.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +207,7 @@
       <workItem from="1622025327674" duration="3350000" />
       <workItem from="1622032511565" duration="21489000" />
       <workItem from="1622184772160" duration="28530000" />
-      <workItem from="1622437931696" duration="9973000" />
+      <workItem from="1622437931696" duration="17333000" />
     </task>
     <servers />
   </component>

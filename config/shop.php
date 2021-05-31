@@ -25,21 +25,25 @@ return $routes + [
 	'routes' => [
 		// Docs: https://aimeos.org/docs/Laravel/Custom_routes
 		// Multi-sites: https://aimeos.org/docs/Laravel/Configure_multiple_shops
-		// 'admin' => ['prefix' => 'admin', 'middleware' => ['web']],
-		// 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
-		// 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
-		// 'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['web', 'api']],
-		// 'account' => ['prefix' => 'myaccount', 'middleware' => ['web', 'auth']],
-		// 'supplier' => ['prefix' => 'supplier/{site}', 'middleware' => ['web']],
-		// 'default' => ['prefix' => 'shop', 'middleware' => ['web']],
-		// 'update' => [],
-	],
+//		 'admin' => ['prefix' => 'admin', 'middleware' => ['web']],
+//		 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
+//		 'jsonadm' => ['prefix' => 'admin/{site}/jsonadm', 'middleware' => ['web', 'auth']],
+//		 'jsonapi' => ['prefix' => 'jsonapi', 'middleware' => ['web', 'api']],
+//		 'account' => ['prefix' => 'myaccount', 'middleware' => ['web', 'auth']],
+//		 'supplier' => ['prefix' => 'supplier/{site}', 'middleware' => ['web']],
+//		 'default' => ['prefix' => 'shop', 'middleware' => ['web']],
+//		 'update' => [],
+        'account' => ['prefix' => '{locale}'],
+        'default' => ['prefix' => '{locale}'],
+        'confirm' => ['prefix' => '{locale}'],
+        'update' => ['prefix' => '{locale}'],
+    ],
 
 
 	'page' => [
 		// Docs: https://aimeos.org/docs/Laravel/Adapt_pages
 		// Hint: catalog/filter is also available as single 'catalog/tree', 'catalog/search', 'catalog/attribute'
-		//'account-index' => ['test/customized'],
+		'account-index' => ['test/customized', 'locale/select'],
 		'basket-index' => [ 'basket/bulk', 'basket/standard','basket/related' ],
 		'catalog-count' => [ 'catalog/count' ],
 		'catalog-detail' => [ 'basket/mini','catalog/stage','catalog/detail','catalog/session','locale/select' ],
@@ -72,6 +76,16 @@ return $routes + [
 
 	'client' => [
 		'html' => [
+            'locale' => [
+                'select' => [
+                    'currency' => [
+                        'param-name' => 'currency',
+                    ],
+                    'language' => [
+                        'param-name' => 'locale',
+                    ],
+                ],
+            ],
 			'basket' => [
 				'cache' => [
 					// 'enable' => false, // Disable basket content caching for development

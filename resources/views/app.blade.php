@@ -50,7 +50,7 @@
 							@if (config('app.shop_registration'))
 								<li><a class="nav-link" href="{{ route('aimeos_shop_admin') }}" title="{{ __('Merchant') }}">{{ __('Merchant') }}</a></li>
 							@endif
-							<li><a class="nav-link" href="{{ route('aimeos_shop_account',['site'=>Route::current()->parameter('site','default'),'locale'=>Route::current()->parameter('locale','en'),'currency'=>Route::current()->parameter('currency','EUR')]) }}" title="{{ __('Profile') }}">{{ __('Profile') }}</a></li>
+							<li><a class="nav-link" href="{{ route('aimeos_home',['site'=>Route::current()->parameter('site','default'),'locale'=>Route::current()->parameter('locale','en'),'currency'=>Route::current()->parameter('currency','EUR')]) }}" title="{{ __('Profile') }}">{{ __('Profile') }}</a></li>
 							<li><form id="logout" action="/logout" method="POST">{{csrf_field()}}</form><a class="nav-link" href="javascript: document.getElementById('logout').submit();">{{ __('Logout') }}</a></li>
 						</ul>
 					</li>

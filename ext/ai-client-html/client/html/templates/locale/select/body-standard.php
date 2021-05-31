@@ -16,7 +16,7 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 
 ?>
 <?php $this->block()->start( 'locale/select' ) ?>
-<section class="aimeos locale-select" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
+<section style="display: block" class="aimeos locale-select" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
 
 	<?php if( ( $errors = $this->get( 'selectErrorList', [] ) ) !== [] ) : ?>
 		<ul class="error-list">
