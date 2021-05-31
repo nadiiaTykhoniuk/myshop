@@ -43,7 +43,7 @@ return $routes + [
 		'basket-index' => [ 'basket/bulk', 'basket/standard','basket/related' ],
 		'catalog-count' => [ 'catalog/count' ],
 		'catalog-detail' => [ 'basket/mini','catalog/stage','catalog/detail','catalog/session','locale/select' ],
-		'catalog-home' => [ 'basket/mini','catalog/home','locale/select','cms/page', 'test/customized'],
+		'catalog-home' => [ 'basket/mini','catalog/home','locale/select','cms/page', 'basket/customized', 'test/customized'],
 		'catalog-list' => [ 'basket/mini','catalog/filter','catalog/lists','locale/select' ],
 		'catalog-stock' => [ 'catalog/stock' ],
 		'catalog-suggest' => [ 'catalog/suggest' ],
@@ -61,7 +61,7 @@ return $routes + [
             'host' => '127.0.0.1',
             'port' => '5432',
             'database' => 'myshop',
-            'username' => 'my_user',
+            'username' => 'city5user',
             'password' => 'secret',
             'stmt' => [],
         ],
@@ -77,12 +77,6 @@ return $routes + [
 					// 'enable' => false, // Disable basket content caching for development
 				],
 			],
-            'test' => [
-                'customized' => [
-                    'standard' => 'test/customized/body-standard'
-                ],
-            ],
-
 			'common' => [
 				'template' => [
 					// 'baseurl' => 'packages/aimeos/shop/themes/elegance',

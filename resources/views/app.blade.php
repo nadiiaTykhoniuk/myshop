@@ -31,7 +31,7 @@
 <body class="aimeos">
 	<nav class="navbar navbar-expand-md navbar-light">
 		<a class="navbar-brand" href="/">
-			<img src="https://aimeos.org/fileadmin/template/icons/logo.png" height="30" title="Aimeos Logo">
+			<img src="{{asset('images/logo.jpg')}}" height="50" title="Aimeos Logo">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

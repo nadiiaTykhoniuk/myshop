@@ -7,8 +7,8 @@
 @stop
 
 @section('aimeos_head')
+    <?= $aibody['basket/customized'] ?? '' ?>
     <?= $aibody['locale/select'] ?? '' ?>
-    <?= $aibody['basket/mini'] ?? '' ?>
 @stop
 
 @section('aimeos_body')

@@ -1,0 +1,22 @@
+{
+	"projectName": "test-ext",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "test-ext CSS",
+		"file": "test-ext.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/"
+		}]
+	}, {
+		"name": "test-ext JS",
+		"file": "test-ext.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "js/"
+		}]
+	}],
+	"resources" : []
+}
