@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/locale/select/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/locale/select/body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/basket/mini/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/basket/mini/body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/html/templates/test/customized/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/client/html/templates/test/customized/body-standard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,6 +163,29 @@
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/phing/phing" />
       <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/moneyphp/money" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
+      <path value="$PROJECT_DIR$/vendor/omnipay/common" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/curl-client" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/braintree/braintree_php" />
+      <path value="$PROJECT_DIR$/vendor/omnipay/braintree" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/php-http/guzzle7-adapter" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/omnipay/stripe" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
     </include_path>
   </component>
   <component name="ProjectId" id="1t4PKdqpnB51Jp3Vj4yupJ4yuZN" />
@@ -181,9 +220,13 @@
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/templates/test" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DemoTest.testDemo">
+  <component name="RunManager" selected="PHPUnit.OmniPayTest.testGetConfigBE">
     <configuration name="DemoTest.testDemo" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Aimeos\Admin\Jsonadm\DemoTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/ext/test-ext/admin/jsonadm/tests/Admin/Jsonadm/DemoTest.php" method="testDemo" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="OmniPayTest.testGetConfigBE" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Aimeos\MShop\Service\Provider\Payment\OmniPayTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/ext/ai-payments/lib/custom/tests/MShop/Service/Provider/Payment/OmniPayTest.php" method="testGetConfigBE" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -192,6 +235,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.OmniPayTest.testGetConfigBE" />
         <item itemvalue="PHPUnit.DemoTest.testDemo" />
       </list>
     </recent_temporary>
@@ -207,7 +251,8 @@
       <workItem from="1622025327674" duration="3350000" />
       <workItem from="1622032511565" duration="21489000" />
       <workItem from="1622184772160" duration="28530000" />
-      <workItem from="1622437931696" duration="17333000" />
+      <workItem from="1622437931696" duration="18514000" />
+      <workItem from="1622523853593" duration="19165000" />
     </task>
     <servers />
   </component>

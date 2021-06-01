@@ -1,0 +1,36 @@
+{
+	"name": "aimeos/ai-payments",
+	"description": "Payment extension for Aimeos web shops and e-commerce solutions",
+	"keywords": ["aimeos", "payment", "shop", "e-commerce", "omnipay", "stripe", "mollie", "authorize", "cardsave", "sagepay"],
+	"homepage": "https://aimeos.org/",
+	"type": "aimeos-extension",
+	"license": "LGPL-3.0-or-later",
+	"support": {
+		"source": "https://github.com/aimeos/ai-payments",
+		"issues": "https://github.com/aimeos/ai-payments/issues",
+		"forum": "https://aimeos.org/help",
+		"wiki": "https://aimeos.org/docs"
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"require": {
+		"php": "~7.1||~8.0",
+		"aimeos/aimeos-core": "2021.04.*",
+		"composer/installers": "^1.0",
+		"omnipay/common": "~3.0",
+		"php-http/httplug": "~2.0",
+		"php-http/curl-client": "~2.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "~7.0||~8.0||~9.0",
+		"omnipay/dummy": "~3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Aimeos\\MShop\\": "lib/custom/src/MShop"
+		},
+		"classmap": [
+			"lib/custom/src"
+		]
+	}
+}

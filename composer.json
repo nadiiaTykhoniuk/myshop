@@ -12,13 +12,19 @@
     }],
     "require": {
         "php": "^7.2||^8.0.1",
-        "ext-intl" : "*",
+        "ext-intl": "*",
         "aimeos/ai-cms-grapesjs": "2021.04.*",
+        "aimeos/ai-payments": "^2021.04",
         "aimeos/aimeos-laravel": "~2021.04",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.20.12",
         "laravel/tinker": "^1.0",
-        "laravel/ui": "^1.0"
+        "laravel/ui": "^1.0",
+        "league/omnipay": "^3",
+        "omnipay/braintree": "~4.0@dev",
+        "omnipay/stripe": "^3.1",
+        "slim/slim": "^4.8",
+        "stripe/stripe-php": "^7.80"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
