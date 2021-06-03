@@ -5,28 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/myshop.ojLfwA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8adb57e5-6dcb-4e10-8a13-ffb961052477/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/myshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myshop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/basket/mini/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/basket/mini/body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/home/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/home/body-standard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/html/templates/test/customized/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/client/html/templates/test/customized/body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/summary-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/summary-body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/files/4/4/44739ef1_408852840.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/preview/2/5/25b8fdd9_1366380868.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/preview/3/a/3a4691ff_1669630513.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/preview/d/d/dde79ebf_15388575.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,25 +187,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ext/test-ext/client/i18n" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ext/ai-laravel/lib/custom/src/MShop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ext/ai-laravel/lib/custom/src/MShop" />
+      <recent name="$PROJECT_DIR$/aimeos-core" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/i18n" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html/Basket/Customized" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client" />
-      <recent name="$PROJECT_DIR$/ext/ai-client-html/client/html/templates" />
-      <recent name="$PROJECT_DIR$/resources/views/vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop" />
+      <recent name="$PROJECT_DIR$/ext/test-ext/lib/custom/src" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html/Basket/Customized" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html/Test/Customized" />
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html" />
-      <recent name="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/test/сustomized" />
-      <recent name="$PROJECT_DIR$/ext/test-ext/client/html/templates/test" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.OmniPayTest.testGetConfigBE">

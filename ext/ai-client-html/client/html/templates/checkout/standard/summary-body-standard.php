@@ -102,6 +102,7 @@ $basketUrl = $this->url( $basketTarget, $basketCntl, $basketAction, [], [], $bas
 
 			<div class="content">
 				<?php if( $services = $this->standardBasket->getService( 'delivery' ) ) : ?>
+
 					<?= $this->partial(
 						/** client/html/checkout/standard/summary/service
 						 * Location of the service partial template for the checkout summary
@@ -122,6 +123,7 @@ $basketUrl = $this->url( $basketTarget, $basketCntl, $basketAction, [], [], $bas
 						$this->config( 'client/html/checkout/standard/summary/service', 'common/summary/service-standard' ),
 						['service' => $services, 'type' => 'delivery']
 					) ?>
+
 				<?php endif ?>
 			</div>
 		</div><!--

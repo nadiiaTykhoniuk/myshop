@@ -81,7 +81,7 @@ $pos = 0;
 
 			<?php if( !( $products = $this->homeTree->getRefItems( 'product', null, 'promotion' ) )->isEmpty() ) : ?>
 				<div class="home-product catalog-list">
-					<a href="<?= $enc->attr( $this->link( 'client/html/catalog/tree/url', ['f_catid' => $this->homeTree->getId(), 'f_name' => $this->homeTree->getName( 'url' )] ) ) ?>">
+					<a href="<?= route('aimeos_shop_list') ?>">
 						<h2 class="home-name"><?= $enc->html( $this->translate( 'client', 'Top seller' ), $enc::TRUST ) ?></h2>
 					</a>
 					<?= $this->partial( $this->config( 'client/html/common/partials/products', 'common/partials/products-standard' ), [

@@ -29,7 +29,6 @@ $enc = $this->encoder();
 						<?= $id != $this->get( 'deliveryOption' ) ?: 'checked="checked"' ?>
 					>
 
-
 					<?php if( $price = $service->price ) : ?>
 
 						<?php if( $price->getValue() > 0 ) : ?>
@@ -75,9 +74,9 @@ $enc = $this->encoder();
 				</label>
 			</div>
 
-
 			<div class="col-sm-6">
 				<?php if( $attributes = $service->attributes ) : ?>
+
 					<?= $this->partial(
 						/** client/html/checkout/standard/partials/serviceattr
 						 * Relative path to the checkout service attribute partial template file

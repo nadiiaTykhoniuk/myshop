@@ -44,10 +44,11 @@ $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 					<?php if( ( $mediaItem = $productItem->getRefItems( 'media', 'default', 'default' )->first() ) !== null ) : ?>
 						<noscript>
 							<div class="media-item" itemscope itemtype="http://schema.org/ImageObject">
-								<img alt="<?= $enc->attr( $mediaItem->getName() ) ?>"
-									src="<?= $enc->attr( $this->content( $mediaItem->getPreview() ) ) ?>"
-									srcset="<?= $enc->attr( $this->imageset( $mediaItem->getPreviews() ) ) ?>"
-									alt="<?= $enc->attr( $mediaItem->getProperties( 'title' )->first() ) ?>"
+								<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEEAAEALAAAAAABAAEAAAICTAEAOw=="
+                                     sizes="<?= $enc->attr( $this->config( 'client/html/common/imageset-sizes', '240px' ) ) ?>"
+                                     data-src="<?= $enc->attr( $this->content( $mediaItem->getPreview() ) ) ?>"
+                                     data-srcset="<?= $enc->attr( $this->imageset( $mediaItem->getPreviews() ) ) ?>"
+                                     alt="<?= $enc->attr( $mediaItem->getProperties( 'title' )->first() ) ?>"
 								>
 								<meta itemprop="contentUrl" content="<?= $enc->attr( $this->content( $mediaItem->getPreview() ) ) ?>">
 							</div>
@@ -55,11 +56,14 @@ $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 
 						<?php foreach( $productItem->getRefItems( 'media', 'default', 'default' ) as $mediaItem ) : ?>
 							<div class="media-item">
-								<img class="lazy-image"
-									src="https://i.pinimg.com/564x/8a/e4/13/8ae413c25eb12d919c359811fc1141a7.jpg"
-									sizes="<?= $enc->attr( $this->config( 'client/html/common/imageset-sizes', '240px' ) ) ?>"
-									alt="<?= $enc->attr( $mediaItem->getProperties( 'title' )->first() ) ?>"
-								>
+                                <img
+                                    class="lazy-image"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEEAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    sizes="<?= $enc->attr( $this->config( 'client/html/common/imageset-sizes', '240px' ) ) ?>"
+                                    data-src="<?= $enc->attr( $this->content( $mediaItem->getPreview() ) ) ?>"
+                                    data-srcset="<?= $enc->attr( $this->imageset( $mediaItem->getPreviews() ) ) ?>"
+                                    alt="<?= $enc->attr( $mediaItem->getProperties( 'title' )->first() ) ?>"
+                                >
 								<meta itemprop="contentUrl" content="<?= $enc->attr( $this->content( $mediaItem->getPreview() ) ) ?>">
 							</div>
 						<?php endforeach ?>
