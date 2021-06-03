@@ -1,6 +1,8 @@
 <?php
 
-namespace \Aimeos\MShop\Service\Provider\Delivery;
+namespace Aimeos\MShop\Service\Provider\Delivery;
+
+use Illuminate\Support\Facades\Cache;
 
 class NovaPoshta
     extends \Aimeos\MShop\Service\Provider\Decorator\Base
@@ -8,7 +10,30 @@ class NovaPoshta
 {
     public function process(\Aimeos\MShop\Order\Item\Iface $order, array $params = []): ?\Aimeos\MShop\Common\Helper\Form\Iface
     {
-        dd("here");
-        return parent::process($order, $params);
+        $np = new \LisDev\Delivery\NovaPoshtaApi2('ea3a3b549806b0aa6cbb4f72a92910a9');
+        $recipient = Cache::get('novaposhta');
+
+        $result = $np->newInternetDocument(
+            array(
+                'FirstName' => 'Мій',
+                'MiddleName' => 'Тестовий',
+                'LastName' => 'Магазин',
+                'CitySender' => 'Львів',
+                'SenderAddress' => '',
+            ),
+            // Данные получателя
+            array(
+                'FirstName' => $recipient['fname'],
+                'LastName' => $recipient['lname'],
+                'Phone' => $recipient['phone'],
+                'City' => $recipient['city'],
+                'Warehouse' => $recipient['warehouse'],
+            ),
+            array(
+            )
+        );
+
+        Cache::put('ttn', $result);
+
     }
 }

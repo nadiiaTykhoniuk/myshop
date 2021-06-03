@@ -25,5 +25,3 @@ Route::get('{path?}', '\Aimeos\Shop\Controller\PageController@indexAction')
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-

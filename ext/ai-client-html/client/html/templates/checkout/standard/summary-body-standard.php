@@ -90,7 +90,6 @@ $basketUrl = $this->url( $basketTarget, $basketCntl, $basketAction, [], [], $bas
 		</div>
 	</div>
 
-
 	<div class="common-summary-service row">
 		<div class="item delivery <?= !$this->value( $this->get( 'summaryErrorCodes', [] ), 'service/delivery' ) ?: 'error' ?> col-sm-6">
 			<div class="header">
@@ -190,7 +189,6 @@ $basketUrl = $this->url( $basketTarget, $basketCntl, $basketAction, [], [], $bas
 		</div>
 	</div>
 
-
 	<div class="checkout-standard-summary-option row">
 		<?= $this->partial(
 			/** client/html/checkout/standard/summary/options
@@ -251,8 +249,7 @@ $basketUrl = $this->url( $basketTarget, $basketCntl, $basketAction, [], [], $bas
 			) ?>
 		</div>
 	</div>
-
-
+    
 	<div class="button-group">
 		<a class="btn btn-default btn-lg btn-back" href="<?= $enc->attr( $this->get( 'standardUrlBack' ) ) ?>">
 			<?= $enc->html( $this->translate( 'client', 'Back' ), $enc::TRUST ) ?>

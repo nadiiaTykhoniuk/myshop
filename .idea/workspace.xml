@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NovaPoshtaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/home/body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/home/body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/payment-body-standard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/summary-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/summary-body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/4/4/44739ef1_408852840.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/preview/2/5/25b8fdd9_1366380868.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/preview/3/a/3a4691ff_1669630513.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/preview/d/d/dde79ebf_15388575.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +175,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-server-middleware" />
       <path value="$PROJECT_DIR$/vendor/psr/http-server-handler" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/lis-dev/nova-poshta-api-2" />
+      <path value="$PROJECT_DIR$/vendor/nova-poshta-api-2-master/src" />
+      <path value="$PROJECT_DIR$/vendor/nova-poshta-api-2-master/tests" />
     </include_path>
   </component>
   <component name="ProjectId" id="1t4PKdqpnB51Jp3Vj4yupJ4yuZN" />
@@ -208,9 +212,17 @@
       <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.OmniPayTest.testGetConfigBE">
+  <component name="RunManager" selected="PHPUnit.NovaPoshtaTest.testBasicTest">
     <configuration name="DemoTest.testDemo" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Aimeos\Admin\Jsonadm\DemoTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/ext/test-ext/admin/jsonadm/tests/Admin/Jsonadm/DemoTest.php" method="testDemo" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ExampleTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ExampleTest.php" method="testBasicTest" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NovaPoshtaTest.testBasicTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\NovaPoshtaTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NovaPoshtaTest.php" method="testBasicTest" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="OmniPayTest.testGetConfigBE" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -223,6 +235,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.NovaPoshtaTest.testBasicTest" />
+        <item itemvalue="PHPUnit.ExampleTest.testBasicTest" />
         <item itemvalue="PHPUnit.OmniPayTest.testGetConfigBE" />
         <item itemvalue="PHPUnit.DemoTest.testDemo" />
       </list>

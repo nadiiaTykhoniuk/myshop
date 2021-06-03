@@ -115,6 +115,29 @@ $enc = $this->encoder();
 					) ?>
 				<?php endif ?>
 
+                <?php if($service->getName() == 'нова пошта'): ?>
+                    <form method="post" action="<?= route('novaposhta') ?>">
+                        <p>Прізвище:</p>
+                        <input type="text" id="lname" name="fname">
+
+                        <p>Ім'я:</p>
+                        <input type="text" id="fname" name="lname">
+
+                        <p>Телефон:</p>
+                        <input type="text" id="phone" name="phone">
+
+                        <p>Місто:</p>
+                        <input type="text" id="city" name="city">
+
+                        <p>Номер відділення:</p>
+                        <input type="text" id="warehouse" name="warehouse">
+
+                        <p>
+                            <button type="submit">Зберегти дані доставки</button>
+                        </p>
+                    </form>
+                <?php endif; ?>
+
 			</div>
 		</div>
 
