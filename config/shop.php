@@ -94,9 +94,16 @@ return $routes + [
                         ],
                     ],
                 ],
+                'email' => [
+                    'payment' => [
+                        'bcc-email' => [
+                            'admin1@gmail.com',
+                            'admin2@gmail.com'
+                        ]
+                    ]
+                ]
             ],
         ],
-
 
         'controller' => [
             'jobs' => [
@@ -109,6 +116,20 @@ return $routes + [
                                 'type' => 'Directory'
                             ]
                         ],
+                    ]
+                ],
+
+                'order' => [
+                    'email' => [
+                        'payment' => [
+                            'status' => [2, 6],
+                            'template-header' => [
+                                'client/html/email/payment/header-standard'
+                            ]
+                        ],
+                        'delivery' => [
+                            'status' => [4, 5, 6]
+                        ]
                     ]
                 ]
             ]

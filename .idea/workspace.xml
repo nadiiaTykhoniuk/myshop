@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-customized.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/html/templates/email/payment/header-customized.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/csvs/products-import-example.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-standard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/themes/elegance/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/themes/elegance/email.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,18 +188,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ext/ai-laravel/lib/custom/src/MShop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment" />
+      <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html/Email/Payment" />
+      <recent name="$PROJECT_DIR$/ext/ai-client-html/client/html/templates" />
       <recent name="$PROJECT_DIR$/ext/ai-laravel/lib/custom/src/MShop" />
       <recent name="$PROJECT_DIR$/aimeos-core" />
-      <recent name="$PROJECT_DIR$/ext/test-ext/client/i18n" />
-      <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client/Html/Basket/Customized" />
-      <recent name="$PROJECT_DIR$/ext/test-ext/client/html/src/Client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop" />
@@ -248,7 +252,7 @@
       <workItem from="1622184772160" duration="28530000" />
       <workItem from="1622437931696" duration="18514000" />
       <workItem from="1622523853593" duration="19165000" />
-      <workItem from="1622791295145" duration="7187000" />
+      <workItem from="1622791295145" duration="16297000" />
     </task>
     <servers />
   </component>

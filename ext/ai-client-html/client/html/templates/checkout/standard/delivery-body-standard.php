@@ -116,7 +116,7 @@ $enc = $this->encoder();
 				<?php endif ?>
 
                 <?php if($service->getName() == 'нова пошта'): ?>
-                    <form method="post" action="<?= route('novaposhta') ?>">
+                    <form method="post">
                         <p>Прізвище:</p>
                         <input type="text" id="lname" name="fname">
 
