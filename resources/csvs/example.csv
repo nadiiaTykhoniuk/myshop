@@ -1,0 +1,2 @@
+Item code,item label,item type,item status,text type,text content,text type,text content,media url,price currencyid,price quantity,price value,price taxrate
+csv_wedding,wedding dress,article,1,short,Wedding dress,long,"Find out that beatiful wedding dress, that I imported from csv",,USD,1,429.00,12.00

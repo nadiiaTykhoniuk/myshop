@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/csvs/products-import-example.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +248,7 @@
       <workItem from="1622184772160" duration="28530000" />
       <workItem from="1622437931696" duration="18514000" />
       <workItem from="1622523853593" duration="19165000" />
-      <workItem from="1622791295145" duration="3548000" />
+      <workItem from="1622791295145" duration="7187000" />
     </task>
     <servers />
   </component>

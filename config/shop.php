@@ -103,9 +103,11 @@ return $routes + [
                 'product' => [
                     'import' => [
                         'csv' => [
-                            'type' => 'directory',
-                            'location' => '/resources/csvs/products-import-example.csv',
-                            'skip-lines' => 1
+                            'location' => '/home/nadia/Projects/myshop/resources/csvs',
+                            'skip-lines' => 1,
+                            'container' => [
+                                'type' => 'Directory'
+                            ]
                         ],
                     ]
                 ]
