@@ -97,7 +97,19 @@ return $routes + [
             ],
         ],
 
+
         'controller' => [
+            'jobs' => [
+                'product' => [
+                    'import' => [
+                        'csv' => [
+                            'type' => 'directory',
+                            'location' => '/resources/csvs/products-import-example.csv',
+                            'skip-lines' => 1
+                        ],
+                    ]
+                ]
+            ]
         ],
 
         'i18n' => [
