@@ -5,3 +5,16 @@ postgres:
     POSTGRES_PASSWORD: secret
   ports:
     - "5432:5432"
+
+minio:
+  image: minio/minio
+  ports:
+    - "9000:9000"
+  volumes:
+    - ./public/files:/data
+  environment:
+    MINIO_ACCESS_KEY: minio_access_key
+    MINIO_ACCESS_KEY_ID: minio_access_key
+    MINIO_SECRET_KEY: minio_secret_key
+    MINIO_REGION_NAME: "us-east-1"
+  command: server /data

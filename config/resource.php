@@ -24,16 +24,19 @@ return array(
 	// 'db-order' => array('adapter' => 'mysql', 'host' => 'localhost', ....)
 
 	// default message queue configuration
-	'fs' => array(
+    'fs' => array(
+        'basedir' => 'http://127.0.0.1:9000/minio/default/',
+        'adapter' => 'FlyAwsS3',
+        'credentials' => array(
+            'key'    => 'minio_access_key',
+            'secret' => 'minio_secret_key',
+        ),
+        'region' => 'us-east-1',
+        'version' => 'latest',
+        'bucket' => 'default',
+    ),
 
-		// file system adapter
-		'adapter' => 'Standard',
-
-		// base directory for file system view
-		'basedir' => '.',
-	),
-
-	// default message queue configuration
+    // default message queue configuration
 	'mq' => array(
 
 		// message queue adapter

@@ -14,7 +14,7 @@ msgstr ""
 
 
 msgid "Add to basket"
-msgstr "До піськи"
+msgstr "До cумочки"
 
 
 #: html/src/Client/Html.php:53

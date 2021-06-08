@@ -25,7 +25,7 @@ return $routes + [
 
         'routes' => [
             'account' => ['prefix' => '{locale}/myaccount', 'middleware' => ['web', 'auth']],
-            'default' => ['prefix' => '{locale}/shop', 'middleware' => ['web']],
+            'default' => ['prefix' => '{locale}/shop', 'middleware' => ['web']]
         ],
 
 
@@ -83,6 +83,9 @@ return $routes + [
                 'common' => [
                     'template' => [
                         // 'baseurl' => 'packages/aimeos/shop/themes/elegance',
+                    ],
+                    'content' => [
+                        'baseurl' => 'http://127.0.0.1:9000/minio/default/',
                     ],
                 ],
                 'catalog' => [

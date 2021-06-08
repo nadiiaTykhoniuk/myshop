@@ -64,6 +64,16 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'minio' => [
+            'driver' => 's3',
+            'endpoint' => env('MINIO_ENDPOINT', 'http://127.0.0.1:9000'),
+            'use_path_style_endpoint' => true,
+            'key' => env('AWS_KEY', 'minio_access_key'),
+            'secret' => env('AWS_SECRET', 'minio_secret_key'),
+            'region' => env('AWS_REGION', 'us-east-1'),
+            'bucket' => env('AWS_BUCKET', 'default'),
+        ],
+
     ],
 
 ];

@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c1b92f4-f4f1-4878-ac5b-1333ecb90453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-customized.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ext/test-ext/client/html/templates/email/payment/header-customized.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd1a3246-2898-416b-8bfe-b8cea1f16e9a/storage_v2/_src_/database/city5user.9VrBuw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/resource.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/resource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/checkout/standard/delivery-body-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-standard.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment/header-standard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ext/ai-client-html/client/html/themes/elegance/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/ext/ai-client-html/client/html/themes/elegance/email.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/client/i18n/uk.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" beforeDir="false" afterPath="$PROJECT_DIR$/ext/test-ext/lib/custom/src/MShop/Service/Delivery/NovaPoshta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/packages/aimeos/shop/themes/elegance/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/packages/aimeos/shop/themes/elegance/email.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +41,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/filesystems.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/composer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/shop.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
@@ -172,9 +188,11 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-server-middleware" />
       <path value="$PROJECT_DIR$/vendor/psr/http-server-handler" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
-      <path value="$PROJECT_DIR$/vendor/lis-dev/nova-poshta-api-2" />
       <path value="$PROJECT_DIR$/vendor/nova-poshta-api-2-master/src" />
       <path value="$PROJECT_DIR$/vendor/nova-poshta-api-2-master/tests" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1t4PKdqpnB51Jp3Vj4yupJ4yuZN" />
@@ -188,7 +206,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ext/ai-client-html/client/html/templates/email/payment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../back-end-rest-api" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -252,7 +270,9 @@
       <workItem from="1622184772160" duration="28530000" />
       <workItem from="1622437931696" duration="18514000" />
       <workItem from="1622523853593" duration="19165000" />
-      <workItem from="1622791295145" duration="16297000" />
+      <workItem from="1622791295145" duration="17245000" />
+      <workItem from="1623058681955" duration="599000" />
+      <workItem from="1623059940575" duration="15326000" />
     </task>
     <servers />
   </component>

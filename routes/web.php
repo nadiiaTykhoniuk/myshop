@@ -11,12 +11,16 @@
 |
 */
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
+
 Auth::routes(['verify' => true]);
 
 Route::get('/customized', 'CustomizedController@index')->name('customized');
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', '\Aimeos\Shop\Controller\CatalogController@homeAction')->name('aimeos_home');
+    Route::redirect('/', '/' . App::getLocale());
+    Route::get('/{locale}', '\Aimeos\Shop\Controller\CatalogController@homeAction')->name('aimeos_home');
 });
 
 Route::get('{path?}', '\Aimeos\Shop\Controller\PageController@indexAction')

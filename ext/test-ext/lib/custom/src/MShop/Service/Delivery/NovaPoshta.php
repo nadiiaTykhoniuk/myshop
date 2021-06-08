@@ -21,7 +21,7 @@ class NovaPoshta
                 'CitySender' => 'Львів',
                 'SenderAddress' => '',
             ),
-            // Данные получателя
+
             array(
                 'FirstName' => $recipient['fname'],
                 'LastName' => $recipient['lname'],

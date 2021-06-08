@@ -9,6 +9,12 @@
 	color: #B0A060;
 }
 
+.header-customized {
+    padding: 30px 10px 300px 10px;
+    background: #f0c674;
+    color: black;
+}
+
 .logo img {
 	max-width: 300px;
 	margin: auto;
