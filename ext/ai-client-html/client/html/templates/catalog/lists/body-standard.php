@@ -75,10 +75,17 @@ $textTypes = $this->config( 'client/html/catalog/lists/head/text-types', array( 
  * @since 2017.01
  * @category Developer
  */
-
-
 ?>
-<section class="aimeos catalog-list <?= $enc->attr( $this->get( 'listCatPath', map() )->getConfigValue( 'css-class', '' )->join( ' ' ) ) ?>" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
+
+<style>
+    .customized {
+        background-image: url("https://i.pinimg.com/564x/8d/0f/c1/8d0fc11e6a2c886e3c9ae8560ddd1c2f.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<section class="aimeos catalog-list customized <?= $enc->attr( $this->get( 'listCatPath', map() )->getConfigValue( 'css-class', '' )->join( ' ' ) ) ?>" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
 
 	<?php if( isset( $this->listErrorList ) ) : ?>
 		<ul class="error-list">
@@ -91,7 +98,6 @@ $textTypes = $this->config( 'client/html/catalog/lists/head/text-types', array( 
 
 	<?php if( ( $catItem = $this->get( 'listCatPath', map() )->last() ) !== null ) : ?>
 		<div class="catalog-list-head">
-
 			<div class="imagelist-default">
 				<?php foreach( $catItem->getRefItems( 'media', 'default', 'default' ) as $mediaItem ) : ?>
 					<img class="<?= $enc->attr( $mediaItem->getType() ) ?>"

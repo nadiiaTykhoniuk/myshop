@@ -84,7 +84,7 @@ $pos = 0;
 					<a href="<?= route('aimeos_shop_list') ?>">
 						<h2 class="home-name"><?= $enc->html( $this->translate( 'client', 'Top seller' ), $enc::TRUST ) ?></h2>
 					</a>
-					<?= $this->partial( $this->config( 'client/html/common/partials/products', 'common/partials/products-standard' ), [
+					<?= $this->partial( $this->config( 'client/html/common/partials/products', 'common/partials/products-customized' ), [
 						'require-stock' => (bool) $this->config( 'client/html/basket/require-stock', true ),
 						'basket-add' => $this->config( 'client/html/catalog/home/basket-add', false ),
 						'products' => $products
