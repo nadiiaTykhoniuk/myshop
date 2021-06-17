@@ -25,15 +25,8 @@ return array(
 
 	// default message queue configuration
     'fs' => array(
-        'basedir' => 'http://127.0.0.1:9000/minio/default/',
-        'adapter' => 'FlyAwsS3',
-        'credentials' => array(
-            'key'    => 'minio_access_key',
-            'secret' => 'minio_secret_key',
-        ),
-        'region' => 'us-east-1',
-        'version' => 'latest',
-        'bucket' => 'default',
+        'basedir' => public_path(),
+        'adapter' => 'standard',
     ),
 
     // default message queue configuration

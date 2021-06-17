@@ -79,7 +79,7 @@ $textTypes = $this->config( 'client/html/catalog/lists/head/text-types', array( 
 
 <style>
     .customized {
-        background-image: url("https://i.pinimg.com/564x/8d/0f/c1/8d0fc11e6a2c886e3c9ae8560ddd1c2f.jpg");
+        background-image: url("https://i.pinimg.com/564x/34/28/55/3428551675f275e28461a3a918c97c61.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }

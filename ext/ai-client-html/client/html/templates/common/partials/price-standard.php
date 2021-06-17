@@ -46,6 +46,18 @@ $notax = $this->translate( 'client', '+ %1$s%% VAT' );
 
 ?>
 <meta itemprop="price" content="<?= $price ?>">
+<style>
+    .value {
+        display: block;
+        padding: 7px;
+        text-align: center;
+        background: rgba(107, 96, 80, 0.4);
+        color: white;
+        font-size: 24px;
+        width: 40%;
+        float: right;
+    }
+</style>
 
 <?php foreach( $prices as $priceItem ) : ?>
 	<?php

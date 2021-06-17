@@ -162,14 +162,19 @@ $detailFilter = array_flip( $this->config( 'client/html/catalog/detail/url/filte
 
 <style>
     .product-customized {
-        float: left;
         padding-left: 0;
         margin-top: 20px;
     }
-    .product-customized:nth-child(odd) {
+    .product-customized:nth-child(even) {
         padding-left: 300px;
         float: right;
     }
+
+    .product-customized:nth-child(odd) {
+        padding-left: 300px;
+        float: left;
+    }
+
     .product-customized .title {
         display: block;
         padding: 20px;
@@ -197,6 +202,10 @@ $detailFilter = array_flip( $this->config( 'client/html/catalog/detail/url/filte
                          width="500px"
                     >
                 <?php endif;?>
+                <?= $this->partial( $this->config( 'client/html/common/partials/products', 'common/partials/price-standard' ), [
+                    'prices' => $productItem->getRefitems( 'price', 'default', 'default' )
+                ]); ?>
+
             </div>
         </a>
     </div>

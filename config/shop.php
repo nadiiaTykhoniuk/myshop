@@ -54,10 +54,15 @@ return $routes + [
                 'host' => '127.0.0.1',
                 'port' => '5432',
                 'database' => 'myshop',
-                'username' => 'city5user',
+                'username' => 'my_user',
                 'password' => 'secret',
                 'stmt' => [],
             ],
+
+            'fs' => [
+                'adapter' => 'standard',
+                'basedir' => public_path()
+            ]
         ],
 
 
@@ -109,6 +114,13 @@ return $routes + [
         ],
 
         'controller' => [
+            'common' => [
+                'media' => [
+                    'previews' => [
+                        ['maxwidth' => 720, 'maxheight' => 960, 'force-size' => false]
+                    ]
+                ]
+            ],
             'jobs' => [
                 'product' => [
                     'import' => [
