@@ -48,9 +48,16 @@ $pos = 0;
  * @since 2021.04
  * @see client/html/common/imageset-sizes
  */
-
-
 ?>
+
+<style>
+    .catalog-stage-image-customized {
+        height: 960px;
+        width: 720px;
+        margin: 0 auto;
+    }
+</style>
+
 <section class="aimeos catalog-home" data-jsonurl="<?= $enc->attr( $this->link( 'client/jsonapi/url' ) ) ?>">
 
 	<?php if( isset( $this->homeErrorList ) ) : ?>
@@ -96,17 +103,16 @@ $pos = 0;
 
 		<?php foreach( $this->homeTree->getChildren() as $child ) : ?>
 
-			<div class="home-item <?= $enc->attr( $child->getCode() ) ?>">
-
-                <?php if( !( $mediaItems = $child->getRefItems( 'media', 'stage', 'default' ) )->isEmpty() ) : ?>
-                    <div class="home-stage catalog-stage-image">
+			<div class="home-item catalog-customized <?= $enc->attr( $child->getCode() ) ?>">
+                <?php if( !( $mediaItems = $child->getRefItems( 'media', 'default', 'default' ) )->isEmpty() ) : ?>
+                    <div class="home-stage catalog-stage-image-customized">
                         <?php foreach( $mediaItems as $mediaItem ) : ?>
                             <a class="stage-item row" href="<?= $enc->attr( $this->link( 'client/html/catalog/tree/url', ['f_catid' => $child->getId(), 'f_name' => $child->getName( 'url' )] ) ) ?>">
+                                <h2 class="home-name"><?= $child->getName()?></h2>
                                 <?php $text = $child->getRefItems( 'text', 'short', 'default' )->getContent()->first() ?>
                                 <?php if( ++$pos % 2 ) : ?>
                                     <img class="stage-image lazy-image col-md-<?= $text ? 8 : 12 ?>"
                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEEAAEALAAAAAABAAEAAAICTAEAOw=="
-                                         sizes="<?= $enc->attr( $this->config( 'client/html/catalog/home/imageset-sizes') ) ?>"
                                          data-src="<?= $enc->attr( $this->content( $mediaItem->getPreview( true ) ) ) ?>"
                                          data-srcset="<?= $enc->attr( $this->imageset( $mediaItem->getPreviews() ) ) ?>"
                                          alt="<?= $enc->attr( $mediaItem->getProperties( 'name' )->first() ) ?>"
@@ -124,7 +130,6 @@ $pos = 0;
                                     <?php endif ?>
                                     <img class="stage-image lazy-image col-md-<?= $text ? 8 : 12 ?>"
                                          src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEEAAEALAAAAAABAAEAAAICTAEAOw=="
-                                         sizes="<?= $enc->attr( $this->config( 'client/html/catalog/home/imageset-sizes', '(max-width: 240px) 240px, (max-width: 720px) 720px, 2160px' ) ) ?>"
                                          data-src="<?= $enc->attr( $this->content( $mediaItem->getPreview( true ) ) ) ?>"
                                          data-srcset="<?= $enc->attr( $this->imageset( $mediaItem->getPreviews() ) ) ?>"
                                          alt="<?= $enc->attr( $mediaItem->getProperties( 'name' )->first() ) ?>"
@@ -135,13 +140,6 @@ $pos = 0;
                     </div>
                 <?php endif ?>
 
-				<?php if( !( $products = $child->getRefItems( 'product', null, 'promotion' ) )->isEmpty() ) : ?>
-					<div class="home-product catalog-list">
-						<a href="<?= $enc->attr( $this->link( 'client/html/catalog/tree/url', ['f_catid' => $this->homeTree->getId(), 'f_name' => $this->homeTree->getName( 'url' )] ) ) ?>">
-							<h2 class="home-name"><?= $enc->html( $child->getName() ) ?></h2>
-						</a>
-					</div>
-				<?php endif ?>
 
 			</div>
 
@@ -150,3 +148,20 @@ $pos = 0;
 	<?php endif ?>
 
 </section>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("catalog-customized");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+</script>
