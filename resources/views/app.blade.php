@@ -76,7 +76,9 @@
 			</div>
 			<div class="col-md-4 my-4">
 				<div class="social"><a href="#" class="sm facebook" title="Facebook" rel="noopener"></a><a href="#" class="sm twitter" title="Twitter" rel="noopener"></a><a href="#" class="sm instagram" title="Instagram" rel="noopener"></a><a href="#" class="sm youtube" title="Youtube" rel="noopener"></a></div>
-				<a class="px-2 py-4 d-inline-block" href="/"><img src="https://aimeos.org/fileadmin/template/icons/logo.png" style="width: 160px" title="Aimeos Logo"></a>
+				<a class="px-2 py-4 d-inline-block" href="/">
+                    <img src="{{asset('images/logo.jpg')}}" height="50" title="Aimeos Logo">
+                </a>
 			</div>
 		</div>
 	</footer>

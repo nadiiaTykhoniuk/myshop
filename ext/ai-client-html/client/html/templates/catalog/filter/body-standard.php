@@ -92,10 +92,10 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 <style>
     #sidebarMenu {
         height: 20%;
-        position: fixed;
         left: 0;
-        width: 100%;
-        margin-top: 60px;
+        width: 80%;
+        z-index: 1;
+        margin: 0 auto;
         transform: translate(-150%, -150%);
         transition: transform 250ms ease-in-out;
         background: rgba(234,238,0,0.38);
