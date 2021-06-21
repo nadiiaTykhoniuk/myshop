@@ -88,128 +88,124 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 
 
 ?>
+
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
-    * {
+    #sidebarMenu {
+        height: 20%;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        margin-top: 60px;
+        transform: translate(-150%, -150%);
+        transition: transform 250ms ease-in-out;
+        background: rgba(234,238,0,0.38);
+    }
+
+    .sidebarMenuInner {
         margin: 0;
         padding: 0;
-    }
-    .burger-menu_button {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 30;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.5);
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-    }
-    .burger-menu_button:hover .burger-menu_lines {
-        filter: brightness(0.7);
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
     }
 
-    .burger-menu_button:hover {
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-
-    .burger-menu_lines::before,
-    .burger-menu_lines::after,
-    .burger-menu_lines {
-        position: absolute;
-        width: 50px;
-        height: 3px;
-        background-color: #BB1E99;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-    }
-    .burger-menu_lines {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .burger-menu_lines::before {
-        content: '';
-        top: -12px;
-    }
-    .burger-menu_lines::after {
-        content: '';
-        top: 12px;
-    }
-
-
-    .burger-menu_active .burger-menu_lines {
-        background-color: transparent;
-    }
-    .burger-menu_active .burger-menu_lines::before {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .burger-menu_active .burger-menu_lines::after{
-        top: 0;
-        transform: rotate(-45deg);
-    }
-
-    .burger-menu_nav {
-        padding-top: 120px;
-        position: fixed;
-        top: 0;
-        z-index: 20;
-        display: flex;
-        flex-flow: column;
-        height: 100%;
-        background-color: #F9AFE9;
-        overflow-y: auto;
-        right: -100%;
-        -webkit-transition: 0.8s;
-        -moz-transition: 0.8s;
-        -o-transition: 0.8s;
-        transition: 0.8s;
-    }
-    .burger-menu_active .burger-menu_nav {
-        right: 0;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-    }
-    .burger-menu_link {
-        padding: 18px 35px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        text-decoration: none;
+    .sidebarMenuInner li {
+        list-style: none;
+        color: #D94B6D;
         text-transform: uppercase;
-        letter-spacing: 5px;
-        font-weight: 400;
-        color: #BB1E99;
-        border-bottom: 1px solid #fff;
-    }
-    .burger-menu_link:first-child {
-        border-top: 1px solid #fff;
-    }
-    .burger-menu_link:hover {
-        filter: brightness(0.9);
-    }
-    .burger-menu_overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-    }
-    .burger-menu_active .burger-menu_overlay {
-        display: block;
-        background-color: rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
     }
 
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: #D94B6D;
+    }
+
+    .sidebarMenuInner li a {
+        color: #D94B6D;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    input[type="checkbox"]:checked ~ #sidebarMenu { transform: translateX(0); }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 22px;
+        left: 15px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #D94B6D;
+    }
+
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
 </style>
+
 <section class="aimeos catalog-filter" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
 
 	<?php if( isset( $this->filterErrorList ) ) : ?>
@@ -220,50 +216,30 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 		</ul>
 	<?php endif ?>
 
-    <div class="burger-menu">
-        <a href="" class="burger-menu_button">
-            <spun class="burger-menu_lines"></spun>
-        </a>
-        <nav class="burger-menu_nav">
-            <h1><?= $enc->html( $this->translate( 'client', 'Filter' ), $enc::TRUST ) ?></h1>
-            <form class="row" method="GET" action="<?= $enc->attr( $this->url( $listTarget, $listController, $listAction, $this->get( 'filterParams', [] ), $listConfig ) ) ?>">
-                <?= $this->block()->get( 'catalog/filter/tree' ) ?>
-                <?= $this->block()->get( 'catalog/filter/search' ) ?>
-                <?= $this->block()->get( 'catalog/filter/price' ) ?>
-                <?= $this->block()->get( 'catalog/filter/supplier' ) ?>
-                <?= $this->block()->get( 'catalog/filter/attribute' ) ?>
-            </form>
-        </nav>
-        <div class="burger-menu_overlay"></div>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><h1><?= $enc->html( $this->translate( 'client', 'Filter' ), $enc::TRUST ) ?></h1></li>
+            <li>
+                <form class="row" method="GET" action="<?= $enc->attr( $this->url( $listTarget, $listController, $listAction, $this->get( 'filterParams', [] ), $listConfig ) ) ?>">
+                    <?= $this->block()->get( 'catalog/filter/tree' ) ?>
+                    <?= $this->block()->get( 'catalog/filter/search' ) ?>
+                    <?= $this->block()->get( 'catalog/filter/price' ) ?>
+                    <?= $this->block()->get( 'catalog/filter/supplier' ) ?>
+                    <?= $this->block()->get( 'catalog/filter/attribute' ) ?>
+                </form>
+            </li>
+        </ul>
     </div>
+
 
 </section>
 
-<script>
-    function burgerMenu(selector) {
-        let menu = $(selector);
-        let button = menu.find('.burger-menu_button', '.burger-menu_lines');
-        let links = menu.find('.burger-menu_link');
-        let overlay = menu.find('.burger-menu_overlay');
 
-        button.on('click', (e) => {
-            e.preventDefault();
-            toggleMenu();
-        });
-
-        links.on('click', () => toggleMenu());
-        overlay.on('click', () => toggleMenu());
-
-        function toggleMenu(){
-            menu.toggleClass('burger-menu_active');
-
-            if (menu.hasClass('burger-menu_active')) {
-                $('body').css('overlow', 'hidden');
-            } else {
-                $('body').css('overlow', 'visible');
-            }
-        }
-    }
-
-    burgerMenu('.burger-menu');
-</script>
