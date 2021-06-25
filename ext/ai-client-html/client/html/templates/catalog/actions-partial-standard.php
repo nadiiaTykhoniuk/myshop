@@ -52,14 +52,13 @@ $urls = array(
 	'watch' => $this->url( $watchTarget, $watchController, $watchAction, ['wat_action' => 'add', 'wat_id' => $this->productItem->getId(), 'd_name' => $this->productItem->getName( 'url' )], $watchConfig ),
 	'favorite' => $this->url( $favTarget, $favController, $favAction, ['fav_action' => 'add', 'fav_id' => $this->productItem->getId(), 'd_name' => $this->productItem->getName( 'url' )], $favConfig ),
 );
-
-
 ?>
+
+
 <div class="catalog-actions">
 	<?php foreach( $this->config( 'client/html/catalog/actions/list', ['pin', 'watch', 'favorite'] ) as $entry ) : ?>
 		<?php if( isset( $urls[$entry] ) ) : ?>
 			<a class="actions-button actions-button-<?= $enc->attr( $entry ) ?>" href="<?= $enc->attr( $urls[$entry] ) ?>" title="<?= $enc->attr( $this->translate( 'client/code', $entry ) ) ?>"></a>
-
-		<?php endif ?>
+        <?php endif ?>
 	<?php endforeach ?>
 </div>

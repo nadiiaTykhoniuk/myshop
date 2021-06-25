@@ -1306,31 +1306,53 @@ AimeosCatalog = {
 
 		$(".catalog-actions .actions-button-favorite").on("click", function(ev) {
 
-			Aimeos.createOverlay();
+            var href = $(this).attr("href");
+            var splitHref = href.split('/');
+            var productId = splitHref[splitHref.length-2];
 
-			$.ajax({
-				url: $(this).attr("href"),
-				dataType: 'html',
-				headers: {
-					"X-Requested-With": "jQuery"
-				}
-			}).done(function(data) {
+            $.ajax({
+                url: 'http://127.0.0.1:8000/jsonapi/customer',
+                method: "GET",
+                dataType: "json",
+                data: ''
+            }).done( function( result ) {
+                response = result;
 
-				var doc = document.createElement("html");
-				doc.innerHTML = data;
-				var content = $(".account-favorite", doc);
+                var params = {'data': [{
+                        'attributes': {
+                            "customer.lists.domain": "product",
+                            "customer.lists.type": "favorite",
+                            "customer.lists.refid": productId,
+                            "customer.lists.datestart": null,
+                            "customer.lists.dateend": null,
+                            "customer.lists.config": {},
+                            "customer.lists.position": 0,
+                            "customer.lists.status": 1
+                        }
+                    }]};
 
-				if( content.length > 0 ) {
-					Aimeos.createContainer(content);
-				} else {
-					$("html").replaceWith(doc);
-				}
-			});
+                var url = response['links']['customer/relationships']['href'];
 
-			return false;
+                if(response['meta']['csrf']) {
+                    var csrf = {};
+                    csrf[response['meta']['csrf']['name']] = response['meta']['csrf']['value'];
+                    url += (url.indexOf('?') === -1 ? '?' : '&') + $.param(csrf);
+                }
+
+                $.ajax({
+                    url: url,
+                    method: "POST",
+                    dataType: "json",
+                    data: JSON.stringify(params)
+                }).done( function( result ) {
+                    console.log( result );
+                });
+            });
+
+            return false;
+
 		});
 	},
-
 
 	/**
 	 * Adds a product to the watch list without page reload

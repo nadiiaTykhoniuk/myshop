@@ -7,11 +7,10 @@
 @stop
 
 @section('aimeos_head')
-    <?= $aibody['basket/customized'] ?? '' ?>
+    <?= $aibody['basket/mini'] ?? '' ?>
     <?= $aibody['locale/select'] ?? '' ?>
 @stop
 
 @section('aimeos_body')
     <?= $aibody['catalog/home'] ?? '' ?>
-    <?= $aibody['test/customized'] ?? '' ?>
 @stop

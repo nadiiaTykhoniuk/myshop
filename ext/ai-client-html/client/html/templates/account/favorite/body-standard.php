@@ -6,6 +6,9 @@
  * @copyright Aimeos (aimeos.org), 2015-2021
  */
 
+
+use Aimeos\Client\Html\Account\Favorite\Standard;
+
 $enc = $this->encoder();
 
 /** client/html/account/favorite/url/target
@@ -91,7 +94,14 @@ $optAction = $this->config( 'client/jsonapi/url/action', 'options' );
 $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 
 
+$favTarget = $this->config( 'client/html/account/favorite/url/target' );
+$favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+$favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
+$favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
+
+
 ?>
+
 <section class="aimeos account-favorite" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ) ?>">
 
 	<?php if( ( $errors = $this->get( 'favoriteErrorList', [] ) ) !== [] ) : ?>
@@ -102,7 +112,6 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 		</ul>
 	<?php endif ?>
 
-
 	<?php if( !$this->get( 'favoriteItems', map() )->isEmpty() ) : ?>
 
 		<h1 class="header"><?= $this->translate( 'client', 'Favorite products' ) ?></h1>
@@ -110,16 +119,17 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 		<ul class="favorite-items">
 
 			<?php foreach( $this->get( 'favoriteItems', map() )->reverse() as $listItem ) : ?>
+
 				<?php if( ( $productItem = $listItem->getRefItem() ) !== null ) : ?>
 
 					<li class="favorite-item">
-						<?php $params = ['fav_action' => 'delete', 'fav_id' => $listItem->getRefId()] + $this->get( 'favoriteParams', [] ) ?>
-						<a class="modify" href="<?= $enc->attr( $this->url( $favTarget, $favController, $favAction, $params, [], $favConfig ) ) ?>">
-							<?= $this->translate( 'client', 'X' ) ?>
-						</a>
-
 						<?php $params = array_diff_key( ['d_name' => $productItem->getName( 'url' ), 'd_prodid' => $productItem->getId(), 'd_pos' => ''], $detailFilter ) ?>
-						<a href="<?= $enc->attr( $this->url( $detailTarget, $detailController, $detailAction, $params, [], $detailConfig ) ) ?>">
+
+                        <button onclick="deleteFavoriteAction(<?= $productItem->getId() ?>)">
+                            <?= $this->translate( 'client', 'X' ) ?>
+                        </button>
+
+                        <a href="<?= URL::to('/') . '/' . Lang::locale() . '/shop/' . $productItem->getLabel() ?>">
 							<?php $mediaItems = $productItem->getRefItems( 'media', 'default', 'default' ) ?>
 
 							<?php if( ( $mediaItem = $mediaItems->first() ) !== null ) : ?>
@@ -127,6 +137,7 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 							<?php else : ?>
 								<div class="media-item"></div>
 							<?php endif ?>
+
 
 							<h3 class="name"><?= $enc->html( $productItem->getName(), $enc::TRUST ) ?></h3>
 							<div class="price-list">
@@ -184,6 +195,47 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 
 		<?php endif ?>
 
+    <?php else: ?>
+
+        <h1>Wishlist is empty</h1>
+
 	<?php endif ?>
 
+
 </section>
+
+<script>
+    function deleteFavoriteAction(productId){
+
+        $.ajax({
+            url: 'http://127.0.0.1:8000/jsonapi/customer',
+            method: "GET",
+            dataType: "json",
+            data: ''
+        }).done( function( response ) {
+            var url = response['links']['customer/relationships']['href'];
+
+            if(response['meta']['csrf']) {
+                var csrf = {};
+                csrf[response['meta']['csrf']['name']] = response['meta']['csrf']['value'];
+                url += '&relatedid=' + productId;
+                url += (url.indexOf('?') === -1 ? '?' : '&') + $.param(csrf);
+                console.log(url);
+            }
+
+            $.ajax({
+                type: "POST",
+                data:{
+                    _method:"DELETE"
+                },
+                url: url,
+                headers: { 'X-CSRF-TOKEN' : productId }
+            });
+
+
+        });
+
+        return false;
+    }
+
+</script>

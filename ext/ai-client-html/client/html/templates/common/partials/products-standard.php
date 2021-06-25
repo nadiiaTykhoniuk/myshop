@@ -212,3 +212,4 @@ $detailFilter = array_flip( $this->config( 'client/html/catalog/detail/url/filte
 
 <?php endforeach ?>
 
+

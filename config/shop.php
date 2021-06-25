@@ -36,7 +36,7 @@ return $routes + [
             'basket-index' => [ 'basket/bulk', 'basket/standard','basket/related', 'locale/select' ],
             'catalog-count' => [ 'catalog/count' ],
             'catalog-detail' => [ 'basket/mini','catalog/stage','catalog/detail','catalog/session','locale/select' ],
-            'catalog-home' => [ 'basket/mini','catalog/home','locale/select','cms/page', 'basket/customized', 'test/customized'],
+            'catalog-home' => [ 'basket/mini','catalog/home','locale/select','cms/page', 'basket/mini'],
             'catalog-list' => [ 'basket/mini','catalog/filter','catalog/lists','locale/select' ],
             'catalog-stock' => [ 'catalog/stock' ],
             'catalog-suggest' => [ 'catalog/suggest' ],
@@ -45,6 +45,7 @@ return $routes + [
             'checkout-index' => [ 'checkout/standard' ],
             'checkout-update' => [ 'checkout/update' ],
             'customized' => [ 'test/customized' ],
+            'account-favorite' => ['account/favorite']
         ],
 
 
@@ -70,6 +71,13 @@ return $routes + [
 
         'client' => [
             'html' => [
+                'account' => [
+                    'favorite' => [
+                        'domains' => [
+                            'text', 'price', 'media'
+                        ]
+                    ]
+                ],
                 'locale' => [
                     'select' => [
                         'currency' => [
@@ -118,6 +126,7 @@ return $routes + [
                 'media' => [
                     'previews' => [
                         ['maxwidth' => 720, 'maxheight' => 960, 'force-size' => false]
+
                     ]
                 ]
             ],
