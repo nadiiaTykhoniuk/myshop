@@ -7,9 +7,13 @@
 
 $enc = $this->encoder();
 
-
+use Illuminate\Support\Facades\DB;
 ?>
+
 <?php $this->block()->start( 'jqadm_content' ) ?>
+
+<?= $this->render( $this->config( 'admin/jqadm/template/page', 'dashboard/list-statistics-standard' ) ) ?>
+
 <div class="dashboard container-fluid">
 	<nav class="main-navbar col-xl-12">
 		<h1 class="navbar-brand">

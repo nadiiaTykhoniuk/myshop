@@ -77,6 +77,7 @@ return [
 			'setting' => 'setting',
 			'job' => 'job',
 			'order' => 'order',
+            'statistics' => 'statistics'
 		],
 		'order' => [
 			'subparts' => [

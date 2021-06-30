@@ -115,7 +115,7 @@ $enc = $this->encoder();
 					) ?>
 				<?php endif ?>
 
-                <?php if($service->getName() == 'нова пошта'): ?>
+                <?php if($service->getName() == 'Нова пошта'): ?>
                     <form method="post">
                         <p>Прізвище:</p>
                         <input type="text" id="lname" name="fname">

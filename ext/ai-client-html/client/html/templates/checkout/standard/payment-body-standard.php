@@ -118,10 +118,7 @@ $enc = $this->encoder();
         </div>
     <?php endforeach ?>
 
-    <?php
-        \Illuminate\Support\Facades\Cache::put('novaposhta', $_POST);
-    ?>
-
+    <?php \Illuminate\Support\Facades\Cache::put('novaposhta', $_POST); ?>
 
     <div class="button-group">
         <a class="btn btn-default btn-lg btn-back" href="<?= $enc->attr( $this->get( 'standardUrlBack' ) ) ?>">
