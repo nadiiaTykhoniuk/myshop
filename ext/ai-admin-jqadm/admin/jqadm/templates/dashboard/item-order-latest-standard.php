@@ -88,6 +88,7 @@ $statuslist = array(
 );
 
 ?>
+
 <?php if( !$this->get( 'orderlatestItems', map() )->isEmpty() ) : ?>
 	<div class="order-latest col-xl-12">
 		<div class="box">

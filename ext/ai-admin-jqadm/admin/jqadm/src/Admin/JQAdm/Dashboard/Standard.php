@@ -23,7 +23,7 @@ class Standard
 	extends \Aimeos\Admin\JQAdm\Common\Admin\Factory\Base
 	implements \Aimeos\Admin\JQAdm\Common\Admin\Factory\Iface
 {
-	/**
+    /**
 	 * Deletes a resource
 	 *
 	 * @return string|null Output to display or null for none

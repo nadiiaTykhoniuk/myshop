@@ -66,8 +66,15 @@ return $routes + [
             ]
         ],
 
-
-        'admin' => [],
+        'admin' => [
+            'jqadm' => [
+                'dashboard' => [
+                    'decorators' => [
+                        'local' => ['ProductDecorator']
+                    ]
+                ]
+            ]
+        ],
 
         'client' => [
             'html' => [

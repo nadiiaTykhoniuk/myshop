@@ -49,7 +49,6 @@ $columnList = [
 
 <?= $this->partial( $this->config( 'admin/jqadm/partial/columns', 'common/partials/columns-standard' ) ) ?>
 
-
 <div class="list-view">
 
 	<nav class="main-navbar log">

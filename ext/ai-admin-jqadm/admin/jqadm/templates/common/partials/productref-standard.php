@@ -24,6 +24,7 @@ $url = $this->url( $target, $cntl, $action, ['resource' => 'product', 'id' => '_
 
 ?>
 <div class="productref-list"
+
 	data-resource="<?= $enc->attr( $this->get( 'resource' ) ) ?>"
 	data-parentid="<?= $enc->attr( $this->get( 'parentid' ) ) ?>"
 	data-fields="<?= $enc->attr( $this->get( 'fields', [] ) ) ?>"
@@ -31,6 +32,7 @@ $url = $this->url( $target, $cntl, $action, ['resource' => 'product', 'id' => '_
 	data-types="<?= $enc->attr( $this->get( 'types' ) ) ?>">
 
 	<div class="table-responsive">
+        <h1>Where am I?</h1>
 		<table class="list-items table table-striped">
 			<thead class="list-header">
 				<tr>

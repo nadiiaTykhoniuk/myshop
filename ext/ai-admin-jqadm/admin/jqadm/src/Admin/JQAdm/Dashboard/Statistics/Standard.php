@@ -34,18 +34,15 @@ class Standard
         $view = $this->getView();
 
         $manager = \Aimeos\MShop::create( $this->getContext(), 'product' );
-
-        $filter = $manager->filter();
-
         $groupByEditor = [];
 
         $editors = DB::table('mshop_product')->pluck('editor')->unique();
         foreach ($editors as $editor) {
-            $groupByEditor [$editor] = $manager->search( $filter->add( 'product.editor', '==', $editor ));
+            $filter = $manager->filter();
+            $groupByEditor [$editor] = $manager->search( $filter->add( 'product.editor', '==', $editor), ['price']);
         }
         $view->productsByEditor = $groupByEditor;
-
-        $view->testVariable = 'syka';
+        dd($groupByEditor);
 
         $tplconf = 'admin/jqadm/dashboard/statistics/template-list';
         $default = 'dashboard/list-statistics-standard';

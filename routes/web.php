@@ -16,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
-Route::get('/customized', 'CustomizedController@index')->name('customized');
-
 Route::get('/myaccount/favorite', 'FavoriteController@index')->name('account-favorite');
-//Route::post('/myaccount/favorite', 'FavoriteController@index')->name('account-favorite');
-Route::delete('/myaccount/favorite/delete/{product}', 'FavoriteController@destroy');
+Route::prefix('{locale}')->group(function () {
+    Route::get('/customized', 'CustomizedController@index')->name('customized');
+    //Route::get('/myaccount/favorite', 'FavoriteController@index')->name('account-favorite');
+});
 
 Route::group(['middleware' => ['web']], function () {
     Route::redirect('/', '/' . App::getLocale());
