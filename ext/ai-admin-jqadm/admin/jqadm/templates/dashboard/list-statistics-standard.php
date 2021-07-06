@@ -37,7 +37,6 @@ $enc = $this->encoder();
                                     <td><?= $product->getName() ?></td>
                                     <td><?= $product->getCode() ?></td>
                                     <td><?= $product->getLabel() ?></td>
-                                    <?php var_dump($product->getRefItems('price', 'default', 'default')); ?>
                                 </tr>
                             <?php endforeach; ?>
                         <?php endforeach; ?>

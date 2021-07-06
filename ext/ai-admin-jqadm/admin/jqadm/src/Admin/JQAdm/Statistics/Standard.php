@@ -8,7 +8,7 @@
  */
 
 
-namespace Aimeos\Admin\JQAdm\Dashboard\Statistics;
+namespace Aimeos\Admin\JQAdm\Statistics;
 
 use Illuminate\Support\Facades\DB;
 
@@ -24,11 +24,11 @@ class Standard
 {
 
     /**
-     * Returns a list of resource according to the conditions
+     * Returns a list of resource
      *
      * @return string Output to display
      */
-    public function search() : ?string
+    public function get() : ?string
     {
 
         $view = $this->getView();

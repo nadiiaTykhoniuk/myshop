@@ -37,6 +37,7 @@ return [
 			'media' => 'media',
 			'text' => 'text',
 			'price' => 'product',
+            'statistics' => 'Statistics'
 		],
 		'media' => [
 			'subparts' => [

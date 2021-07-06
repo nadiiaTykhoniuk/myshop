@@ -13,6 +13,7 @@ return [
 		20 => 'catalog',
 		30 => 'attribute',
 		40 => 'supplier',
+        50 => 'statistics'
 	],
 	30 => [
 		'' => 'users',

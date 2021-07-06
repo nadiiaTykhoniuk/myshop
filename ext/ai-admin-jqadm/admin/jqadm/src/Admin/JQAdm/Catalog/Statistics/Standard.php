@@ -8,7 +8,7 @@
  */
 
 
-namespace Aimeos\Admin\JQAdm\Dashboard\Statistics;
+namespace Aimeos\Admin\JQAdm\Catalog\Statistics;
 
 use Illuminate\Support\Facades\DB;
 
@@ -43,8 +43,8 @@ class Standard
         }
         $view->productsByEditor = $groupByEditor;
 
-        $tplconf = 'admin/jqadm/dashboard/statistics/template-list';
-        $default = 'dashboard/list-statistics-standard';
+        $tplconf = 'admin/jqadm/common/page-standard';
+        $default = 'catalog/list-statistics-standard';
 
         return $view->render( $view->config( $tplconf, $default ) );
     }
@@ -70,6 +70,6 @@ class Standard
      */
     protected function getSubClientNames() : array
     {
-        return $this->getContext()->getConfig()->get( 'admin/jqadm/dashboard/statistics/subparts', [] );
+        return $this->getContext()->getConfig()->get( 'admin/jqadm/catalog/statistics/subparts', [] );
     }
 }
