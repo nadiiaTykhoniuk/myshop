@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 
 <?php $this->block()->start( 'jqadm_content' ) ?>
 
-    <?= $this->render( $this->config( 'admin/jqadm/partial/confirm', 'dashboard/list-statistics-standard' ) ) ?>
+    <?= $this->render( $this->config( 'admin/jqadm/template/page', 'dashboard/list-statistics-standard' ) ) ?>
 
 <?php $this->block()->stop() ?>
 
