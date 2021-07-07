@@ -17,6 +17,9 @@ return [
 					'template-data' => 'partials/order/base/data-standard',
 				],
 			],
+            'store' => [
+                'template-data' => 'partials/store/data-standard',
+            ]
 		],
 		'domains' => [
 			'attribute' => 'attribute',
@@ -36,6 +39,7 @@ return [
 			'stock' => 'stock',
 			'tag' => 'tag',
 			'text' => 'text',
+            'store' => 'store'
 		],
 		'resources' => [
 			'attribute/type' => 'attribute/type',

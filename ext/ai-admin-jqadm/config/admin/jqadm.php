@@ -8,7 +8,7 @@ return [
 			'media/property' => 'media/property',
 			'price' => 'price',
 			'price/property' => 'price/property',
-			'text' => 'text',
+			'text' => 'text'
 		],
 		'subparts' => [
 			'media' => 'media',
@@ -232,4 +232,5 @@ return [
 			],
 		],
 	],
+    'store' => []
 ];

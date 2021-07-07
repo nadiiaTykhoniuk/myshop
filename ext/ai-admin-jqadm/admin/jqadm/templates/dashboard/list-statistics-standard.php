@@ -24,9 +24,9 @@ $enc = $this->encoder();
                             <th>Name</th>
                             <th>Code</th>
                             <th>Label</th>
-                            <th>Price</th>
+                            <th>Prices</th>
                         </tr>
-                        <?php foreach ($this->productsByEditor as $editor => $productList) : ?>
+                        <?php foreach( $this->get( 'productsByEditor', [] ) as  $editor => $productList) : ?>
                             <tr>
                                 <td colspan="4">
                                     <h3><?= $editor ?></h3>
@@ -37,6 +37,11 @@ $enc = $this->encoder();
                                     <td><?= $product->getName() ?></td>
                                     <td><?= $product->getCode() ?></td>
                                     <td><?= $product->getLabel() ?></td>
+                                    <td>
+                                        <?= $this->partial( $this->config( 'client/html/common/partials/products', 'common/partials/price-standard' ), [
+                                            'prices' => $product->getRefitems( 'price', 'default', 'default' )
+                                        ]); ?>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php endforeach; ?>

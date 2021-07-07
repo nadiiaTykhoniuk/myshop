@@ -575,4 +575,13 @@ return [
          */
         'groups' => ['admin', 'editor', 'super'],
     ],
+    'store' => [
+        /** admin/jqadm/resource/language/groups
+         * List of user groups that are allowed to switch languages
+         *
+         * @param array List of user group names
+         * @since 2017.10
+         */
+        'groups' => ['admin', 'editor', 'super'],
+    ]
 ];
