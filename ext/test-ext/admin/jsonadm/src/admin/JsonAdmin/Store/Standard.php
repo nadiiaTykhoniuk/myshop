@@ -10,6 +10,9 @@
 namespace Aimeos\Admin\JsonAdm\Store;
 
 
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+
 /**
  * JSON API store client
  *
@@ -20,20 +23,10 @@ class Standard
     extends \Aimeos\Admin\JsonAdm\Standard
     implements \Aimeos\Admin\JsonAdm\Common\Iface
 {
-	/**
-	 * Returns the list items for association relationships
-	 *
-	 * @param \Aimeos\Map $items List of items implementing \Aimeos\MShop\Common\Item\Iface
-	 * @param array $include List of resource types that should be fetched
-	 * @return \Aimeos\Map List of items implementing \Aimeos\MShop\Common\Item\Lists\Iface
-	 */
-	protected function getListItems( \Aimeos\Map $items, array $include ) : \Aimeos\Map
-	{
-	    $view = $this->getView();
-        $manager = \Aimeos\MShop::create( $this->getContext(), 'store' );
-        $search = $manager->createSearch();
-        $total = 0;
-        $view->items = $manager->searchItems( $search, [], $total );
-        $view->total = $total;
-	}
+    public function get( ServerRequestInterface $request, ResponseInterface $response ) : \Psr\Http\Message\ResponseInterface
+    {
+        $this->getView()->assign( array( 'partial-data' => 'admin/jsonadm/partials/store/template-data' ) );
+
+        return parent::get( $request, $response );
+    }
 }
